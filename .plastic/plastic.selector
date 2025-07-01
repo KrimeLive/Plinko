@@ -1,0 +1,4 @@
+repository "Plinko/Plinko@2475856906845@cloud"
+  path "/"
+    br "/main"
+    co "/main"
