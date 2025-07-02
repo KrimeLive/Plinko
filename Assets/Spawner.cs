@@ -15,9 +15,10 @@ public class Spawner : MonoBehaviour
             float spawnPointX = Random.Range((float)-1.0, (float)1.0);
             float spawnPointy = Random.Range(0, 0);
             
-            Vector3 spawnPosition          = new Vector3(spawnPointX, spawnPointy, 0);
+            Vector3 spawnPosition= transform.position + new Vector3(spawnPointX, spawnPointy, 0);
 
-            Instantiate(mycircle, spawnPosition, Quaternion.identity);
+            Instantiate(mycircle,spawnPosition, Quaternion.identity);
+
         }
 
     }
