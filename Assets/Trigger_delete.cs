@@ -9,7 +9,7 @@ public class Trigger_delete : MonoBehaviour
         if (collision)
         {
             Destroy(collision.gameObject);
-            ScoreManager.instance.AddPoint();
+            ScoreManager.instance.AddPoint1();
             
         }
 

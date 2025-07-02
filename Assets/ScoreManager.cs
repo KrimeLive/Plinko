@@ -17,9 +17,9 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = "$" + score.ToString() ;
     }
 
-    public void AddPoint()
+    public void AddPoint1()
     {
-        score += 1;
+        score += 50;
         scoreText.text = "$" + score.ToString();
     }
     public void AddPoint2()
@@ -27,5 +27,44 @@ public class ScoreManager : MonoBehaviour
         score += 100;
         scoreText.text = "$" + score.ToString();
     }
-
+    public void AddPoint3()
+    {
+        score += 100;
+        scoreText.text = "$" + score.ToString();
+    }
+    public void AddPoint4()
+    {
+        score += 100;
+        scoreText.text = "$" + score.ToString();
+    }
+    public void AddPoint5()
+    {
+        score += 100;
+        scoreText.text = "$" + score.ToString();
+    }
+    public void AddPoint6()
+    {
+        score += 100;
+        scoreText.text = "$" + score.ToString();
+    }
+    public void AddPoint7()
+    {
+        score += 100;
+        scoreText.text = "$" + score.ToString();
+    }
+    public void AddPoint8()
+    {
+        score += 100;
+        scoreText.text = "$" + score.ToString();
+    }
+    public void AddPoint9()
+    {
+        score += 100;
+        scoreText.text = "$" + score.ToString();
+    }
+    public void AddPoint10()
+    {
+        score += 100;
+        scoreText.text = "$" + score.ToString();
+    }
 }
