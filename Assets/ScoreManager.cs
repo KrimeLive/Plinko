@@ -29,32 +29,32 @@ public class ScoreManager : MonoBehaviour
     }
     public void AddPoint3()
     {
-        score += 100;
+        score += 250;
         scoreText.text = "$" + score.ToString();
     }
     public void AddPoint4()
     {
-        score += 100;
+        score += 500;
         scoreText.text = "$" + score.ToString();
     }
     public void AddPoint5()
     {
-        score += 100;
+        score += 1000;
         scoreText.text = "$" + score.ToString();
     }
     public void AddPoint6()
     {
-        score += 100;
+        score += 1000;
         scoreText.text = "$" + score.ToString();
     }
     public void AddPoint7()
     {
-        score += 100;
+        score += 500;
         scoreText.text = "$" + score.ToString();
     }
     public void AddPoint8()
     {
-        score += 100;
+        score += 250;
         scoreText.text = "$" + score.ToString();
     }
     public void AddPoint9()
@@ -64,7 +64,7 @@ public class ScoreManager : MonoBehaviour
     }
     public void AddPoint10()
     {
-        score += 100;
+        score += 50;
         scoreText.text = "$" + score.ToString();
     }
 }
