@@ -1,15 +1,18 @@
+using System.Collections;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
     public GameObject mycircle;
+    public float cooldownTime = 2f;
 
-    
+    private bool canSpawn = true;
+
         
     private void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Space) == true)
+        if (Input.GetKeyDown(KeyCode.Space) && canSpawn)
         {
             
             float spawnPointX = Random.Range((float)-1.0, (float)1.0);
@@ -19,19 +22,18 @@ public class Spawner : MonoBehaviour
 
             Instantiate(mycircle,spawnPosition, Quaternion.identity);
 
+            canSpawn = false;
+            StartCoroutine(SpawnCooldown());
         }
+        
+
 
     }
 
-
-
-
-
-
-
-
-
-
-
+  private IEnumerator SpawnCooldown()
+    {
+        yield return new WaitForSeconds(cooldownTime);
+        canSpawn=true;
+    }
 
 }
